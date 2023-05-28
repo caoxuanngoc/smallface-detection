@@ -1,8 +1,13 @@
 import tkinter as tk
 from tkinter import filedialog
 import cv2
+import sys
 import matplotlib.pyplot as plt
 from mtcnn import MTCNN
+import os
+current = os.path.dirname(os.path.realpath(__file__))
+parent = os.path.dirname(current)
+sys.path.append(parent)
 from retinaface_mtcnn import RetinaFace
 import time
 
